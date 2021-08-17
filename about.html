@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLORAL DREAM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="pics/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>  
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About Us -->
+
+    <div id="aboutus-gallery">
+        <div class="aboutus-text">
+          <img src="pics/aboutus.jpg" style="width:320px; height:450px;"/>
+          <h1>... our journey begins here</h1>
+          <p>It all started in a small town near Seoul.<br>Our grandma had made us flower crowns ever since we were kids.<br> As we grew up and she got older, we wanted to do something she used to love.<br> She wanted to be a florist since she was a little girl, but unfortunately she couldn't. <br> So we wanted to turn her dream into reality, hence thet name of our shop.</p>
+        </div>
+      
+<!-- Java Script Toggle Menu -->
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu (){
+        navLinks.style.right ="0";
+    }
+    function hideMenu (){
+        navLinks.style.right ="-200px";
+    }
+
+</script>
+</body>
+</html>
